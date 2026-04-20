@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pch">
+      <UniqueIdentifier>{2e19f157-ef8f-434b-8d24-dedab0f5f29a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{9c1b3fd9-9a95-49d0-be52-d36eafdb7b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{a356c545-e32b-4c1a-92fb-32a2c50f29c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{af715dcb-989a-47d9-a94e-ddbe229d52d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment1.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

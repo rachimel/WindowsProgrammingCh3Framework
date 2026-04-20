@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GeoBase/GeoBase.vcxproj" Id="d2067f7e-b849-4bab-a1dd-b0afeb319372" />
+  <Project Path="PCH-Common/PCH-Common.vcxproj" Id="1c430452-a7b9-4a18-a978-9a6cb9fa1c2f" />
+  <Project Path="WindowsProgramming-Chapter3/WindowsProgramming-Chapter3.vcxproj" Id="754f5458-4123-4756-a8cb-d1a585b2d25b" />
+</Solution>

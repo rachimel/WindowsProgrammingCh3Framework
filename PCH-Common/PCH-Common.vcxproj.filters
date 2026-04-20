@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pch-common">
+      <UniqueIdentifier>{6cbaefe9-0748-4a40-b3f8-b4b2f4138e73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PCH_Common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PCH_Common.cpp" />
+  </ItemGroup>
+</Project>
