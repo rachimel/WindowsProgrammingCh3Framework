@@ -1,4 +1,10 @@
 #pragma once
+
+constexpr size_t g_maxThickness{ 10 };
+template <typename Ty>
+concept HasEnumEnd = std::is_enum_v<Ty> &&
+	requires { {Ty::End};};
+
 enum class DefaultColors
 {
 	Black,
@@ -11,9 +17,9 @@ enum class DefaultColors
 	Green,
 	Skyblue,
 	Blue,
-	Lavender,
+	Pink,
 	Purple,
-	End
+	Transparent
 };
 
 namespace Color
@@ -21,7 +27,7 @@ namespace Color
 	std::uniform_int_distribution<
 		std::underlying_type_t<DefaultColors>> dist{
 		std::to_underlying(DefaultColors::Black),
-		std::to_underlying(DefaultColors::End) - 1
+		std::to_underlying(DefaultColors::Transparent) - 1
 	};
 }
 // Flag Enum Set
@@ -36,16 +42,13 @@ enum class ShapeType
 enum class TrailType
 {
 	None,
-	Circle,
 	Square,
+	Circle,
 	Triangle
 };
 
-// Scene
-enum class SceneType
+enum DebugFlag
 {
-	Assignment1,
-	Assignemnt2,
-	Assignemnt3,
-
+	DEBUG_STATUS = 0b1,
+	DEBUG_OBJECT = 0b10,
 };

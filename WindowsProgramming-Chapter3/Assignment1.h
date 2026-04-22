@@ -1,11 +1,6 @@
 ﻿#pragma once
 
-constexpr size_t g_maxThickness{ 10 };
-template <typename Ty>
-concept HasEnumEnd = std::is_enum_v<Ty> &&
-	requires { {Ty::End};};
-
-class Program
+class Assignment1
 {
 public:
 	struct GridOption
@@ -13,8 +8,8 @@ public:
 		RECT gridRegion;
 		bool scalable{ false };
 	};
-	Program(HINSTANCE hInstance, const Vector2<LONG>& size = Vector2<LONG>{ 900,900 });
-	~Program();
+	Assignment1(HINSTANCE hInstance, const Vector2<LONG>& size = Vector2<LONG>{ 900,900 });
+	~Assignment1();
 
 	void SetGrid(const Vector2<int>& gridSize,
 		int gridThickness, DefaultColors gridColor,
@@ -71,7 +66,7 @@ private:
 	std::vector<HBRUSH> _brushes;
 	
 	std::array<std::array<HPEN, g_maxThickness>,
-	std::to_underlying(DefaultColors::End)> _pens;
+	std::to_underlying(DefaultColors::Transparent)> _pens;
 	Vector2<int> _mousePos;
 	// Flags
 	ShapeType _shapeType{ ShapeType::None };

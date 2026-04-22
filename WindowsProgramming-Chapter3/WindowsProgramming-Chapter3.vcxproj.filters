@@ -13,15 +13,18 @@
     <Filter Include="scene">
       <UniqueIdentifier>{af715dcb-989a-47d9-a94e-ddbe229d52d7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{0de395b0-4841-4398-a831-c50bf3ed6421}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>pch</Filter>
     </ClCompile>
-    <ClCompile Include="Program.cpp">
+    <ClCompile Include="Assignment1.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="Assignment1.cpp">
+    <ClCompile Include="Assignment1Entry.cpp">
       <Filter>scene</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
@@ -29,6 +32,15 @@
     </ClCompile>
     <ClCompile Include="Types.cpp">
       <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment2.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment2Entry.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment3.cpp">
+      <Filter>common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,7 +50,7 @@
     <ClInclude Include="Utils.h">
       <Filter>utils</Filter>
     </ClInclude>
-    <ClInclude Include="Program.h">
+    <ClInclude Include="Assignment1.h">
       <Filter>common</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
@@ -50,5 +62,23 @@
     <ClInclude Include="Types.h">
       <Filter>utils</Filter>
     </ClInclude>
+    <ClInclude Include="Assignment2.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_3_2.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment3.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WindowsProgramming-Chapter3.rc" />
+    <ResourceCompile Include="Resource.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

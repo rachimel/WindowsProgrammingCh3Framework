@@ -16,3 +16,5 @@
 #include <random>
 #include <optional>
 #include <limits>
+
+#define NOMINMAX

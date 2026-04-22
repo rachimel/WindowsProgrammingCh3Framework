@@ -1,5 +1,23 @@
 ﻿#pragma once
 
+namespace Util
+{
+	template <RealNumber CoordType>
+	Vector2<CoordType> Smooth(const
+		Vector2<CoordType>& a, const Vector2<CoordType>& b,
+		float t)
+	{
+		if (t >= 1.f)
+			return b;
+		else if (t <= 0.f)
+			return a;
+		float st{ (t * t * (3 - 2 * t)) };
+		return Vector2{
+			a.x + (b.x - a.x) * st,
+			a.y + (b.y - a.y) * st
+		};
+	}
+}
 namespace RenderUtil
 {
 	template <std::integral Ty>
